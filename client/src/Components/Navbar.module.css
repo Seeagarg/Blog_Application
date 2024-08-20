@@ -1,0 +1,32 @@
+.container{
+    background: transparent;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo{
+    flex: 0.3;
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+}
+
+
+.tabs{
+    flex: 0.7;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.link{
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+}

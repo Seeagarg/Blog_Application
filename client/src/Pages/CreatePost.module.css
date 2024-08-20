@@ -1,0 +1,111 @@
+.container {
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+    gap: 2rem;
+    width: 80%;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 10rem;
+  }
+
+  .img_container{
+    width: 30rem;
+    /* height: 30rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .upload_animation{
+    width: 20rem;
+    height: 20rem;
+    cursor: grab;
+  }
+
+  .title{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
+
+  .title_input{
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.037);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    
+  }
+
+  .button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button_content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }
+
+  .inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    gap: 1rem;
+  }
+
+  .sub_input{
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.037);
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    
+  }
+
+
+  .text_area{
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.037);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.25rem;
+  }
+  

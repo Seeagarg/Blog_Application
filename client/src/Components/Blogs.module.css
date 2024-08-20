@@ -1,0 +1,88 @@
+.container{
+    padding: 2rem 2rem 0rem 0rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.b1:nth-child(odd){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.b1:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.img:nth-child(odd) {
+    width: 40%;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.img:nth-child(even){
+    width: 40%;
+    display: flex;
+    /* justify-content: flex-end; */
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.data{
+    width: 60%;
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #5c5a676d;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+    color: black;
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button_content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+   
+  }
+  

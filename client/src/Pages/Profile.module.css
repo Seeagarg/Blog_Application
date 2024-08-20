@@ -1,0 +1,271 @@
+.container {
+    /* display: flex;
+      flex-direction: column;
+      align-items: center; */
+    gap: 2rem;
+    width: 80%;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 10rem;
+  }
+
+  .personal_details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+
+  .img_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    position: relative;
+    
+  }
+
+  .img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 1px solid grey;
+    position: relative;
+  }
+  .add_icon{
+    position: absolute;
+    top: 58%;
+    right: 20%;
+    font-size: 2rem;
+    cursor: pointer;
+    /* bottom: 20%; */
+  }
+
+  .add_icon:hover{
+    color: green;
+  }
+
+  .email{
+    text-align: center;
+  }
+
+  .details_container{
+   display: flex;
+   /* justify-content: flex-end; */
+   flex-direction: column;
+   gap: 2rem;
+   justify-content: space-between;
+   align-items: flex-end;
+    padding: 2rem;
+  }
+
+  .details{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: flex-end;
+  }
+
+  .userName{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .posts_detail{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .createPost{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .text{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .social{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .social p{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+
+
+  .card {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+  .posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* width: 100%; */
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .post{
+    /* width: 20rem; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    padding: 10px;
+    text-align: left;
+    border-radius: 5px;
+  }
+
+  .subject{
+    padding: 10px;
+    padding-left: 0px;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .desc{
+    padding: 10px;
+    padding-left: 0px;
+    font-size: 1.15rem;
+    font-weight: 500;
+  }
+
+
+  .title{
+    padding: 10px;
+    padding-left: 0px;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .post_img{
+    width: 100%;
+    height: 15rem;
+  }
+
+  .btn_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .btn {
+    transition: all 0.3s ease-in-out;
+    font-family: "Dosis", sans-serif;
+  }
+  
+  .btn {
+    width: 150px;
+    height: 60px;
+    border-radius: 50px;
+    background-image: linear-gradient(135deg, #feb692 0%, #ea5455 100%);
+    box-shadow: 0 20px 30px -6px rgba(238, 103, 97, 0.5);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 24px;
+    color: white;
+    
+   margin: 10px;
+  }
+  
+  .btn:hover {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+  
+  .btn:active {
+    opacity: 0.5;
+  }
